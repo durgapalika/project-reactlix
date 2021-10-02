@@ -1,2 +1,2 @@
 export { fetchGenres } from './genres';
-export { fetchMovies } from './movies';
+export { fetchMoviesWithGenreNames,filterMoviesBySelectedGenres } from './movies';

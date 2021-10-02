@@ -14,7 +14,8 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  height: 150px;
+  width: 150px;
 }
 
 h1 {
@@ -47,50 +48,88 @@ h2 {
 }
 
 .filters {
-  border-bottom: 1px solid #eee;
+  border: 1px solid;
   display: grid;
   gap: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding: 2rem;
 }
 
 /* Perhaps a grid? */
 .genres-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rating-selection {
+  display: flex;
+  flex-direction: row;
 }
 
 .movies {
   display: grid;
   gap: 2rem;
   margin: 0 auto;
+  font-size: 16pt;
+  font-weight: 600;
 }
 
 .movie {
-  display: grid;
+  padding-top: 10px;
+  display: flex;
   gap: 1rem;
   grid-template-columns: minmax(3rem, 1fr) 2fr;
+  border: 1px solid;
+  padding: 20px;
+  margin-bottom: 1rem;
 }
 
 .movie-title {
-  font-size: 1.6rem;
+  font-size: 14pt;
+  font-weight: 600;
 }
 
 .movie-image {
   border-radius: 0.2rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  height: 150px;
+  width: 150px;
+  align-self: center;
 }
 
 .movie-content {
-  display: grid;
-  gap: 0.5rem;
-  grid-template-rows: auto 1fr auto;
+  font-size: 14pt;
 }
 
 .movie-meta {
   align-content: start;
   justify-content: start;
-  display: grid;
-  gap: 0.2rem;
-  font-size: 0.8rem;
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 12pt;
+}
+
+.genreItem {
+  padding: 5px 10px 5px 10px;
+}
+
+.genreLabel {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.reset-button {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 10pt;
+  width: 100px;
+}
+
+.rating-title {
+  font-size: 14pt;
+  font-weight: 400;
+}
+
+.meta-title {
+  font-weight: 400;
 }
